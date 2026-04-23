@@ -13,7 +13,7 @@ export default function Home() {
 
   // 🔥 LOAD BOOKS (FIXED)
   useEffect(() => {
-    axios.get(`${BASE_URL}/books/public`)
+    axios.get(`${BASE_URL}/books`)
       .then(res => setBooks(res.data))
       .catch(err => console.log(err));
   }, []);
